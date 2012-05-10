@@ -27,6 +27,7 @@ namespace Chirpy.Domain.Service
 
         public void AddChirp(Chirp newChirp)
         {
+            //TODO Implement better RegEx matching http://stackoverflow.com/a/5367564/431891
             string[] tokens = newChirp.Value.Split(new char[] { ' ' });
             for (int tokenCount = 0; tokenCount < tokens.Length; tokenCount++)
             {
